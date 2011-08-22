@@ -1,0 +1,19 @@
+About
+=====
+
+NTP2 (NewNotePad Pro) text format to OPML converter web interface.
+
+Web App
+=======
+
+visit: http://ntp2opml.app.aquahill.net/
+
+How To Use
+==========
+
+* clone the code to your local machine.
+  git clone git@github.com:ryochin/ntp2opml.git
+* install Plack, Any::Moose perl module. (e.g. > sudo cpan Plack)
+* plackup ./app.psgi
+* access http://localhost:5000/
+
