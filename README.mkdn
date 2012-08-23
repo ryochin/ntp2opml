@@ -1,19 +1,23 @@
 About
 =====
 
-NTP2 (NewNotePad Pro) text format to OPML converter web interface.
+NTP2 (NewNotePad Pro) text format to OPML converter tools.
 
-Web App
-=======
 
-visit: http://ntp2opml.app.aquahill.net/
+How To Use As Commandline Tool
+==============================
 
-How To Use
-==========
+* install Any::Moose perl module. (e.g. > sudo cpan Any::Moose)
+* run as follows:
+
+	./ntp2opml /path/to/text.txt
+
+How To Use As Web App
+=====================
 
 * clone the code to your local machine.
   git clone git@github.com:ryochin/ntp2opml.git
 * install Plack, Any::Moose perl module. (e.g. > sudo cpan Plack)
-* plackup ./app.psgi
+* plackup ./app/app.psgi
 * access http://localhost:5000/
 

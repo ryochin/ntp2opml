@@ -1,0 +1,21 @@
+#!/usr/bin/perl --
+
+use strict;
+use warnings;
+use lib qw(app);
+
+use Path::Class qw(file);
+use NTP2OPML;
+
+use utf8;
+use Encode ();
+
+my $file = shift @ARGV or die "usage: $0 <ntp2 text file>";
+
+my $o = NTP2OPML->new;
+my $content = file( $file )->slurp or die "content empty?";
+$o->content( $content );
+print Encode::encode_utf8( $o->opml ), "\n";
+
+__END__
+
